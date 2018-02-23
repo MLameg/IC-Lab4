@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4: Question 1 By Monti Lameg</title>
+	
+<head>
+<body>
+	<input type="number" id="first">
+	<input type="number" id="second">
+	<input type="number" id="third">
+	<button onclick="calc()">Calculate</button><br>
+	
+	<label>Your sum is: </label><p id="add"></p>
+	<label>Your product is: </label><p id="mult"></p>
+	
+	<script>
+		function calc()
+			{
+				var a = document.getElementById("first").value;
+				var b = document.getElementById("second").value;
+				var c = document.getElementById("third").value;
+				var sum = +a + +b + +c;
+				var prod = a * b * c;
+				document.getElementById("add").innerHTML = sum;
+				document.getElementById("mult").innerHTML = prod;
+			}
+	</script>
+	
+</body>
+</html>

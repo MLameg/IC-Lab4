@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<title>CSIT 337 Lab 4:Question 4.4 by Monti Lameg</title>
+		<style>
+		table, tr, th, td {
+				border: 1px solid black;
+				text-align: center;
+		}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+
+			var row = prompt("How many rows?");
+
+			document.write("<table><thead><tr><th>N</th><th>10*N</th><th>100*N</th><th>1000*N</th></tr></thead>");
+			
+			for (i=1; i <= row; i++) {
+				document.write(	"<tr><td>" +i+ "</td><td>" +(i*10)+ 
+								"</td><td>" +(i*100)+ "</td><td>" 
+								+(i*1000)+"</td></tr>");
+			};
+			document.write("</table>");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8">
+	<title>Lab 4: Question 3 By Monti Lameg</title>
+	<style>
+		table, th, td {
+						border: 1px solid black; 
+						text-align: center;
+						width: 400px;
+						}
+	</style>
+	<script type = "text/javascript">
+		var first, second, third;
+		var a, b, c;
+		var cua, cub, cuc;
+		var sqa, sqb, sqc;
+		
+		first = window.prompt("Enter first integer.");
+		second = window.prompt("Enter second integer.");
+		third = window.prompt("Enter third integer.");
+		
+		a = parseInt(first);
+		b = parseInt(second);
+		c = parseInt(third);
+		
+		
+		sqa = Math.pow(a, 2);
+		sqb = Math.pow(b, 2);
+		sqc = Math.pow(c, 2);
+		
+		cua = Math.pow(a, 3);
+		cub = Math.pow(b, 3);
+		cuc = Math.pow(c, 3);
+		
+		if (a < 0 || b < 0 || c < 0){
+			alert("You have entered a NEGATIVE number!!")
+		
+		};
+	</script>
+		
+<head>
+<body>
+	<script type="text/javascript">
+		document.writeln("<table><thead><tr><th>Number</th><th>Square</th><th>Cube</th></tr></thead><tr><td>"
+						+a+"</td><td>"+sqa+"</td><td>"+cua+"</td></tr><tr><td>"
+						+b+"</td><td>"+sqb+"</td><td>"+cub+"</td></tr><tr><td>"
+						+c+"</td><td>"+sqc+"</td><td>"+cuc+"</td></tr></table>")
+	</script>
+</body>
+</html>
